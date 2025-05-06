@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Grava dados (string ou array/objeto) em um arquivo dentro de wp-content.
