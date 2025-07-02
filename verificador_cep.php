@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Verificador de CEP
  * Description: Não deixa o Usuário fazer compra com um CEP falso
- * Version:     0.3
+ * Version:     1.0.0
  * Author:      Rdorval / HDM
  */
 defined( 'ABSPATH' ) || exit;
@@ -33,6 +33,7 @@ function vc_validar_cep_no_checkout() {
 
     if ( ! meu_checador_de_cep( $cep ) ) {
         wc_add_notice( 'O CEP informado não é válido.', 'error' );
+        logador('O CEP informado não é válido.');
     }
 }
 
