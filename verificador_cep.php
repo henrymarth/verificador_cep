@@ -16,7 +16,7 @@ function vc_init_verificador_cep() {
         logador( 'Verificador de CEP: WooCommerce não detectado' );
         return;
     }
-    logador( 'Verificador de CEP: WooCommerce detectado, registrando hook' );
+    //logador( 'Verificador de CEP: WooCommerce detectado, registrando hook' );
 
 
     add_action( 'woocommerce_checkout_process',           'vc_validar_cep_no_checkout', 10 );
